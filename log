@@ -44,3 +44,17 @@ Thu 30 Mar 2023 03:35:06 PM UTC:
  tests:  0|6
 total_score: 0/70
 fd72c4e
+Thu 30 Mar 2023 03:36:10 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:17:18: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   17 |   dato->capacity = NULL;
+      |                  ^
+arraylist.c:18:14: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   18 |   dato->size = NULL;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+247c384
