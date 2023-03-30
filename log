@@ -959,3 +959,9 @@ arraylist.c:79:37: error: expected ‘)’ before ‘;’ token
       |                                     )
 Compilation failed
 ad634b7
+Thu 30 Mar 2023 11:54:59 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+0ea5c90
