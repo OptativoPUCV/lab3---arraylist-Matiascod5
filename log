@@ -173,3 +173,23 @@ Thu 30 Mar 2023 03:54:37 PM UTC:
  1 file changed, 2 insertions(+)
  tests:  0|0
 7f9c654
+Thu 30 Mar 2023 03:55:02 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:29: error: dereferencing ‘void *’ pointer [-Werror]
+   25 |     l->data[ l->size + 1] = *data;
+      |                             ^~~~~
+arraylist.c:25:27: error: void value not ignored as it ought to be
+   25 |     l->data[ l->size + 1] = *data;
+      |                           ^
+arraylist.c:31:29: error: dereferencing ‘void *’ pointer [-Werror]
+   31 |     l->data[ l->size + 1] = *data;
+      |                             ^~~~~
+arraylist.c:31:27: error: void value not ignored as it ought to be
+   31 |     l->data[ l->size + 1] = *data;
+      |                           ^
+cc1: all warnings being treated as errors
+Compilation failed
+b4e57c3
