@@ -215,3 +215,17 @@ arraylist.c:25:30: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 1784bbc
+Thu 30 Mar 2023 03:55:50 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:29: error: dereferencing ‘void *’ pointer [-Werror]
+   25 |     l->data[ l->size + 1] = *data;
+      |                             ^~~~~
+arraylist.c:25:27: error: void value not ignored as it ought to be
+   25 |     l->data[ l->size + 1] = *data;
+      |                           ^
+cc1: all warnings being treated as errors
+Compilation failed
+855f3e4
