@@ -776,3 +776,20 @@ Thu 30 Mar 2023 11:11:23 PM UTC:
  tests:  8|2
 total_score: 40/70
 a84942e
+Thu 30 Mar 2023 11:25:49 PM UTC: 
+ arraylist.c | 26 +++++++++++++++++++++++---
+ 1 file changed, 23 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:72:24: error: expected identifier before ‘[’ token
+   72 |     return l->data[ l->[size + i];
+      |                        ^
+arraylist.c:72:35: error: expected ‘;’ before ‘}’ token
+   72 |     return l->data[ l->[size + i];
+      |                                   ^
+      |                                   ;
+   73 | 
+   74 |   }
+      |   ~                                
+Compilation failed
+432c197
