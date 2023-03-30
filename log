@@ -6,3 +6,15 @@ Thu 30 Mar 2023 03:24:55 PM UTC:
  tests:  0|6
 total_score: 0/70
 4bfcc3e
+Thu 30 Mar 2023 03:34:18 PM UTC: 
+ arraylist.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:26: error: ‘arrayList’ undeclared (first use in this function); did you mean ‘ArrayList’?
+   15 |   dato = malloc( sizeof( arrayList));
+      |                          ^~~~~~~~~
+      |                          ArrayList
+arraylist.c:15:26: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e9d35b0
