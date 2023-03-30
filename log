@@ -793,3 +793,15 @@ arraylist.c:72:35: error: expected ‘;’ before ‘}’ token
       |   ~                                
 Compilation failed
 432c197
+Thu 30 Mar 2023 11:26:29 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:72:20: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   72 |     return l->data[size + i];
+      |                    ^~~~
+      |                    dysize
+arraylist.c:72:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7b2c72a
