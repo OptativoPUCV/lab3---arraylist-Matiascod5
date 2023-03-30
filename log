@@ -76,3 +76,13 @@ Thu 30 Mar 2023 03:37:23 PM UTC:
  tests:  0|6
 total_score: 0/70
 b417eda
+Thu 30 Mar 2023 03:37:36 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:9: error: expected identifier before ‘*’ token
+   16 |   dato->**data = malloc( sizeof( void) * 2);
+      |         ^
+Compilation failed
+f06526f
