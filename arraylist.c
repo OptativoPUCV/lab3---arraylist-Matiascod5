@@ -41,6 +41,7 @@ void push(ArrayList * l, void * data, int i){
   if( l->capacity > l->size){
 
     l->data[i - 1] = data;
+    l->size++;
   } 
 
   if ( l->capacity == l->size){
@@ -49,7 +50,7 @@ void push(ArrayList * l, void * data, int i){
         for ( size_t j = i ; j < l->size ; j++){
           l->data[ i ] = l->data[i];
         }
-      l->data[ i - 1] = data;
+        l->data[ i - 1] = data;
        l->size++;
 
     }
