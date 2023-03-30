@@ -73,7 +73,7 @@ void* get(ArrayList * l, int i){
         return NULL;
       }
 
-     return l->data[ l->capacity + i];
+      return l->data[ l->size + i];
 
     }
 
