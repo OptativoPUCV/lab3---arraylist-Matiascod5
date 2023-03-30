@@ -20,7 +20,7 @@ ArrayList *createList(void) {
   
 
   
-    return NULL;
+    return *dato;
 }
 
 void append(ArrayList * l, void * data){
