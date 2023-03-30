@@ -40,7 +40,7 @@ void push(ArrayList * l, void * data, int i){
     
   if( l->capacity > l->size){
 
-    l->data[i - 1] = data;
+    l->data[i ] = data;
     l->size++;
   } 
 
