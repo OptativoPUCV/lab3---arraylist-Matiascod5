@@ -12,7 +12,7 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) {
   ArrayList *dato = NULL;
-  dato = malloc( sizeof( ArrayList) * 2);
+  dato = malloc( sizeof( ArrayList) );
   dato->data = malloc( sizeof( void) * 2);
   dato->capacity = 1;
   dato->size = 1;
