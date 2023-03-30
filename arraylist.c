@@ -36,6 +36,8 @@ void append(ArrayList * l, void * data){
 
 void push(ArrayList * l, void * data, int i){
 
+
+  
   if ( i > l->size) return;
 
   if ( l->capacity == l->size){
@@ -47,14 +49,13 @@ void push(ArrayList * l, void * data, int i){
   if( i < l->size){
 
     for ( int j = l->size ; j > i ; j--){
-      l->data[j] = l->data[j + 1];
+      l->data[j] = l->data[j - 1];
     }
     
   
     l->data[i] = data;
     l->size++;
-  
-  }
+}
 
 void* pop(ArrayList * l, int i){
     return NULL;
