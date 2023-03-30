@@ -941,3 +941,21 @@ Thu 30 Mar 2023 11:54:39 PM UTC:
  tests:  8|2
 total_score: 40/70
 136de53
+Thu 30 Mar 2023 11:54:54 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:79:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+   79 |   for ( int j == i ; j < l->size - 1 ; j++){
+      |               ^~
+arraylist.c:79:22: error: ‘j’ undeclared (first use in this function)
+   79 |   for ( int j == i ; j < l->size - 1 ; j++){
+      |                      ^
+arraylist.c:79:22: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:79:37: error: expected ‘)’ before ‘;’ token
+   79 |   for ( int j == i ; j < l->size - 1 ; j++){
+      |       ~                             ^~
+      |                                     )
+Compilation failed
+ad634b7
